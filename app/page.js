@@ -21,7 +21,7 @@ const parts = [
   {
     id: "finance",
     icon: "💰",
-    name: "재무회계 파트",
+    name: "재무/회계 파트",
     tagline: "Finance & Accounting",
     accent: "var(--slack-blue)",
     description: "회사의 자금과 숫자를 책임지는 파트입니다.",
@@ -38,7 +38,7 @@ const parts = [
 const toc = [
   { id: "overview", label: "경영기획실 소개" },
   { id: "hr", label: "HR 파트" },
-  { id: "finance", label: "재무회계 파트" },
+  { id: "finance", label: "재무/회계 파트" },
   { id: "contact", label: "문의하기" },
 ];
 
@@ -145,7 +145,7 @@ export default function Home() {
           </p>
           <p className="optional">
             경영기획실은 <strong>HR 파트</strong>와{" "}
-            <strong>재무회계 파트</strong>로 구성되어, 조직과 재무 양 축에서
+            <strong>재무/회계 파트</strong>로 구성되어, 조직과 재무 양 축에서
             회사의 의사결정을 뒷받침합니다.
           </p>
         </section>
