@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ConsultForm from "./ConsultForm";
 
 const parts = [
   {
@@ -39,6 +40,7 @@ const toc = [
   { id: "overview", label: "경영기획실 소개" },
   { id: "hr", label: "HR 파트" },
   { id: "finance", label: "재무/회계 파트" },
+  { id: "consult", label: "상담 신청" },
   { id: "contact", label: "문의하기" },
 ];
 
@@ -166,6 +168,15 @@ export default function Home() {
             <p className="detail optional">{p.detail}</p>
           </section>
         ))}
+
+        <section id="consult" className="doc-section">
+          <h2 className="section-title">상담 신청</h2>
+          <p className="lead">
+            아래 양식을 작성해 주시면, 담당자가 내용을 확인한 뒤
+            연락드리겠습니다.
+          </p>
+          <ConsultForm />
+        </section>
 
         <section id="contact" className="doc-section">
           <div className="contact">
